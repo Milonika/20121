@@ -1,0 +1,147 @@
+﻿<Page x:Class="ComputerClub.Pages.BookingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerClub.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="1080"
+      Title="BookingPage">
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="FonePP.png"/>
+        </Grid.Background>
+        <TextBox x:Name="PhoneNumb" HorizontalAlignment="Left" Height="29" Margin="94,98,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194" FontSize="18" SelectionBrush="{x:Null}" Foreground="#FF561F76" Background="White" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="MestoTB" HorizontalAlignment="Left" Height="29" Margin="94,213,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194" FontSize="18" SelectionBrush="{x:Null}" Foreground="Black" Background="White" BorderBrush="{x:Null}" TextChanged="MestoTB_TextChanged"/>
+        <TextBox x:Name="zonaTB" HorizontalAlignment="Left" Height="30" Margin="94,337,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194" FontSize="18" SelectionBrush="{x:Null}" Foreground="Black" Background="White" BorderBrush="{x:Null}"/>
+        <Label Content="ВАШ НОМЕР ТЕЛЕФОНА:" HorizontalAlignment="Left" Height="30" Margin="94,61,0,0" VerticalAlignment="Top" Width="194" Foreground="White" FontSize="16"/>
+        <Label Content="ВАШЕ МЕСТО:" HorizontalAlignment="Left" Height="30" Margin="94,178,0,0" VerticalAlignment="Top" Width="152" Foreground="White" FontSize="16"/>
+        <Label Content="ИГРОВАЯ ЗОНА:&#xA;" HorizontalAlignment="Left" Height="30" Margin="94,302,0,0" VerticalAlignment="Top" Width="152" Foreground="White" FontSize="16"/>
+        <Label Content="ВЫБЕРИТЕ СЕАНС:&#xA;" HorizontalAlignment="Left" Height="30" Margin="94,422,0,0" VerticalAlignment="Top" Width="152" Foreground="White" FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Margin="94,457,0,0" VerticalAlignment="Top" Width="194" Height="28"/>
+        <Label Content="ЦЕНА:&#xA;" HorizontalAlignment="Left" Height="40" Margin="94,540,0,0" VerticalAlignment="Top" Width="152" Foreground="White" FontSize="22"/>
+        <TextBox x:Name="Price" HorizontalAlignment="Left" Height="50" Margin="96,568,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="132" FontSize="36" SelectionBrush="{x:Null}" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.403"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Характеристики ПК" HorizontalAlignment="Left" Margin="676,349,0,0" VerticalAlignment="Top" Height="42" Width="211" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Процессор:" HorizontalAlignment="Left" Margin="503,394,0,0" VerticalAlignment="Top" Height="43" Width="125" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="ОЗУ:" HorizontalAlignment="Left" Margin="506,484,0,0" VerticalAlignment="Top" Height="34" Width="64" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Видеокарта:" HorizontalAlignment="Left" Margin="504,436,0,0" VerticalAlignment="Top" Height="45" Width="132" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Мат.Плата:" HorizontalAlignment="Left" Margin="508,527,0,0" VerticalAlignment="Top" Height="45" Width="127" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Блок питания:" HorizontalAlignment="Left" Margin="509,564,0,0" VerticalAlignment="Top" Height="45" Width="152" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="CPUL" Content="Процессор:" HorizontalAlignment="Left" Margin="688,395,0,0" VerticalAlignment="Top" Height="43" Width="125" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="GPUL" Content="Видеокарта:" HorizontalAlignment="Left" Margin="686,433,0,0" VerticalAlignment="Top" Height="45" Width="132" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="RAML" Content="ОЗУ:" HorizontalAlignment="Left" Margin="688,477,0,0" VerticalAlignment="Top" Height="34" Width="63" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="MotherboardL" Content="Мат.Плата:" HorizontalAlignment="Left" Margin="690,518,0,0" VerticalAlignment="Top" Height="45" Width="127" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="PowerUnitL" Content="Блок питания:" HorizontalAlignment="Left" Margin="689,560,0,0" VerticalAlignment="Top" Height="45" Width="152" RenderTransformOrigin="0.5,0.5" Foreground="White" FontSize="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.749"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.654"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Page>
