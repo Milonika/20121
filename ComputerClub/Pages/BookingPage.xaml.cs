@@ -30,7 +30,7 @@ namespace ComputerClub.Pages
             //CPUL.Content = //////
             //GPUL.Content = //
             //MotherboardL.Content = ///
-            //RAML.Content = ///
+            //RAML.Content = //////
 
 
         }
